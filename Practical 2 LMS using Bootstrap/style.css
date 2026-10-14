@@ -1,0 +1,22 @@
+.drawer-end {
+    align-items: flex-end;
+}
+
+.firstbox {
+    background-color: rgb(215, 223, 224);
+}
+
+.navbar{
+    background-color: rgb(36, 70, 111);
+}
+
+.navbar-brand{
+    font-size: xx-large;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 10%;
+}
+
+.container{
+    color: rgb(52, 82, 82);
+    background-color: rgb(186, 191, 191);
+}
