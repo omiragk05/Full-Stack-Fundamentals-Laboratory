@@ -20,3 +20,13 @@
     color: rgb(52, 82, 82);
     background-color: rgb(186, 191, 191);
 }
+
+[data-bs-theme="dark"] .container {
+    color: var(--bs-body-color);
+    background-color: var(--bs-tertiary-bg);
+}
+
+[data-bs-theme="dark"] .bg-light {
+    color: var(--bs-body-color);
+    background-color: var(--bs-tertiary-bg) !important;
+}
