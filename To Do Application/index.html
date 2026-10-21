@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid"><span class="navbar-brand mb-0 h1">To Do List App</span></div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="card mx-auto shadow-sm text-bg-light" style="max-width: 600px;">
+            <div class="card-body">
+                <h3 class="card-title text-center">Task Manager</h3>
+                <p class="text-center text-muted">Organize your tasks and stay productive</p>
+                <div class="input-group mb-3">
+                    <input type="text" id="taskInput" class="form-control" placeholder="Enter a new task...">
+                    <button class="btn btn-primary" id="addBtn">Add Task</button>
+                </div>
+                <div id="errorMsg" class="text-danger small mb-2 d-none">Task cannot be empty!</div>
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <span>Your tasks</span>
+                    <span class="badge bg-primary" id="taskCount">0 remaining</span>
+                </div>
+                <div class="btn-group w-100 mb-3" role="group">
+                    <input type="radio" class="btn-check" name="filter" id="filterAll" checked>
+                    <label class="btn btn-outline-primary" for="filterAll">All Tasks</label>
+                    <input type="radio" class="btn-check" name="filter" id="filterActive">
+                    <label class="btn btn-outline-primary" for="filterActive">Active Tasks</label>
+                    <input type="radio" class="btn-check" name="filter" id="filterCompleted">
+                    <label class="btn btn-outline-primary" for="filterCompleted">Completed Tasks</label>
+                </div>
+                <ul class="list-group mb-3" id="taskList"></ul>
+                <div class="text-end">
+                    <button class="btn btn-outline-danger btn-sm" id="clearBtn">Clear Completed Tasks</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
