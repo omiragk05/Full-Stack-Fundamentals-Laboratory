@@ -23,10 +23,7 @@
 
             <a class="navbar-brand fw-bold" href="#Home">LMS</a>
 
-            <button class="btn btn-outline-light ms-auto me-2" type="button" id="themeToggle"
-                aria-pressed="false">
-                Dark mode
-            </button>
+
 
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarMenu"
                 aria-controls="navbarMenu" aria-label="Toggle navigation">
@@ -50,7 +47,11 @@
                         <a class="nav-link" href="#Home">Home</a>
                         <a class="nav-link" href="#courses">Courses</a>
                         <a class="nav-link" href="#about">About</a>
-                        <a class="nav-link" href="#contact">Contact</a>
+                        <a class="nav-link" href="#contact">Contact </a>
+                        <button class="btn btn-outline-light ms-auto me-2" type="button" id="themeToggle"
+                            aria-pressed="false">
+                            Dark mode
+                        </button>
 
                     </div>
                 </div>
@@ -64,7 +65,7 @@
 
         <div class="container">
 
-            <div class="bg-body-secondary p-5 rounded-3 text-center border">
+            <div class="bg-body-secondary p-5 rounded-5 text-center border">
 
                 <h1 class="fw-bold mb-3">
                     <span id="greeting"></span> , Welcome to LMS Platform
@@ -89,7 +90,7 @@
     <!-- Our Features -->
     <section id="about" class="container py-5">
 
-        <h2 class="text-center fw-bold mb-5">
+        <h2 class="text-center fw-bold mb-3">
             Our Features
         </h2>
 
@@ -98,16 +99,20 @@
             <!-- Feature 1 -->
             <div class="col-12 col-md-4">
 
-                <div class="card h-100 shadow-sm">
+                <div class="card feature-card h-100 text-center p-4">
 
-                    <div class="card-body text-center p-4">
+                    <div class="feature-icon">
+                        📚
+                    </div>
 
-                        <h3 class="card-title">
+                    <div class="card-body">
+
+                        <h3 class="card-title fw-bold">
                             Extensive Course Library
                         </h3>
 
-                        <p class="card-text fs-5">
-                            Access courses in a variety of fields and skill levels.
+                        <p class="card-text">
+                            Explore a wide range of courses across different subjects and skill levels.
                         </p>
 
                     </div>
@@ -116,19 +121,22 @@
 
             </div>
 
-
             <!-- Feature 2 -->
             <div class="col-12 col-md-4">
 
-                <div class="card h-100 shadow-sm">
+                <div class="card feature-card h-100 text-center p-4">
 
-                    <div class="card-body text-center p-4">
+                    <div class="feature-icon">
+                        💬
+                    </div>
 
-                        <h3 class="card-title">
+                    <div class="card-body">
+
+                        <h3 class="card-title fw-bold">
                             Interactive Discussions
                         </h3>
 
-                        <p class="card-text fs-5">
+                        <p class="card-text">
                             Engage in live discussions and group projects.
                         </p>
 
@@ -138,20 +146,23 @@
 
             </div>
 
-
             <!-- Feature 3 -->
             <div class="col-12 col-md-4">
 
-                <div class="card h-100 shadow-sm">
+                <div class="card feature-card h-100 text-center p-4">
 
-                    <div class="card-body text-center p-4">
+                    <div class="feature-icon">
+                        🎓
+                    </div>
 
-                        <h3 class="card-title">
-                            Certification
+                    <div class="card-body">
+
+                        <h3 class="card-title fw-bold">
+                            Earn Certifications
                         </h3>
 
-                        <p class="card-text fs-5">
-                            Earn certificates to showcase your achievements.
+                        <p class="card-text">
+                            Showcase your knowledge and achievements with certificates upon course completion.
                         </p>
 
                     </div>
@@ -165,114 +176,34 @@
     </section>
 
 
-    <!-- Popular Courses -->
-    <section id="courses" class="container-fluid px-4 px-md-5 py-5 bg-light">
 
-        <h2 class="text-center fw-bold mb-5">
-            Popular Courses
-        </h2>
+<!-- Popular Courses -->
+<section id="courses" class="container-fluid px-4 px-md-5 py-5">
 
-        <div class="row g-4">
+    <h2 class="text-center fw-bold mb-3">
+        Popular Courses
+    </h2>
 
-            <!-- Course 1 -->
-            <div class="col-12 col-md-4">
+    <div class="row g-4">
 
-                <div class="card h-100 shadow-sm">
+        <!-- Course 1 -->
+        <div class="col-12 col-md-6 col-lg-4">
 
-                    <div class="bg-secondary-subtle d-flex align-items-center justify-content-center"
-                        style="height: 180px;">
+            <div class="card course-card h-100">
 
-                        <span class="fs-5 text-secondary">
-                            WEB DEVELOPMENT
-                        </span>
+                <div class="card-body p-4 d-flex flex-column">
 
-                    </div>
+                    <h3 class="card-title fw-bold">
+                        Web Development
+                    </h3>
 
-                    <div class="card-body p-4 d-flex flex-column">
+                    <p class="card-text">
+                        Learn to build modern, responsive websites using HTML, CSS, and JavaScript.
+                    </p>
 
-                        <h3 class="card-title">
-                            Web Development
-                        </h3>
-
-                        <p class="card-text fs-5">
-                            Learn to build modern, responsive websites using HTML, CSS, and JavaScript.
-                        </p>
-
-                        <a href="#contact" class="btn btn-primary mt-auto align-self-start">
-                            Learn More
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <!-- Course 2 -->
-            <div class="col-12 col-md-4">
-
-                <div class="card h-100 shadow-sm">
-
-                    <div class="bg-secondary-subtle d-flex align-items-center justify-content-center"
-                        style="height: 180px;">
-
-                        <span class="fs-5 text-secondary">
-                            DATA SCIENCE
-                        </span>
-
-                    </div>
-
-                    <div class="card-body p-4 d-flex flex-column">
-
-                        <h3 class="card-title">
-                            Data Science
-                        </h3>
-
-                        <p class="card-text fs-5">
-                            Master data analysis, visualization, and machine learning techniques.
-                        </p>
-
-                        <a href="#contact" class="btn btn-primary mt-auto align-self-start">
-                            Learn More
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <!-- Course 3 -->
-            <div class="col-12 col-md-4">
-
-                <div class="card h-100 shadow-sm">
-
-                    <div class="bg-secondary-subtle d-flex align-items-center justify-content-center"
-                        style="height: 180px;">
-
-                        <span class="fs-5 text-secondary">
-                            DIGITAL MARKETING
-                        </span>
-
-                    </div>
-
-                    <div class="card-body p-4 d-flex flex-column">
-
-                        <h3 class="card-title">
-                            Digital Marketing
-                        </h3>
-
-                        <p class="card-text fs-5">
-                            Understand SEO, social media marketing, and online branding strategies.
-                        </p>
-
-                        <a href="#contact" class="btn btn-primary mt-auto align-self-start">
-                            Learn More
-                        </a>
-
-                    </div>
+                    <a href="#contact" class="btn btn-primary mt-4 align-self-start">
+                        Explore Course →
+                    </a>
 
                 </div>
 
@@ -280,7 +211,60 @@
 
         </div>
 
-    </section>
+        <!-- Course 2 -->
+        <div class="col-12 col-md-6 col-lg-4">
+
+            <div class="card course-card h-100">
+
+                <div class="card-body p-4 d-flex flex-column">
+
+                    <h3 class="card-title fw-bold">
+                        Data Science
+                    </h3>
+
+                    <p class="card-text">
+                        Explore data analysis, visualization, and the fundamentals of machine learning.
+                    </p>
+
+                    <a href="#contact" class="btn btn-primary mt-4 align-self-start">
+                        Explore Course →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Course 3 -->
+        <div class="col-12 col-md-6 col-lg-4">
+
+            <div class="card course-card h-100">
+
+                <div class="card-body p-4 d-flex flex-column">
+
+                    <h3 class="card-title fw-bold">
+                        Digital Marketing
+                    </h3>
+
+                    <p class="card-text">
+                        Understand search engine optimization, online branding, and digital marketing strategies.
+                    </p>
+
+                    <a href="#contact" class="btn btn-primary mt-4 align-self-start">
+                        Explore Course →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
 
 
     <!-- Contact Section -->
@@ -306,7 +290,7 @@
 
 
     <!-- Footer -->
-    <footer class="bg-primary text-white text-center py-4 mt-auto">
+    <footer class=" text-white text-center py-4 mt-auto">
 
         <p class="mb-2">
             &copy; 2026 LMS Platform. All Rights Reserved.
