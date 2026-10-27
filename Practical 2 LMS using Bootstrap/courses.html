@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LMS | Learning Management System</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg bg-1 fg-2" data-bs-theme="dark">
+        <div class="container-fluid px-4">
+
+            <a class="navbar-brand fw-bold" href="index.html">LMS</a>
+
+
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarMenu"
+                aria-controls="navbarMenu" aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarMenu" aria-labelledby="navbarMenuLabel">
+
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="navbarMenuLabel">
+                        LMS Menu
+                    </h5>
+
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+
+                <div class="offcanvas-body">
+                    <div class="navbar-nav ms-auto">
+
+                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link" href="courses.html">Courses</a>
+                        <a class="nav-link" href="about.html">About</a>
+                        <a class="nav-link" href="contact.html">Contact </a>
+                        <button class="btn btn-outline-light ms-auto me-2" type="button" id="themeToggle"
+                            aria-pressed="false">
+                            Dark mode
+                        </button>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <main>
+        <!-- Courses -->
+        <section id="courses" class="container-fluid px-4 px-md-5 py-5">
+            <div class="row g-4">
+
+                <!-- Course 1 -->
+                <div class="col-12 col-md-6 col-lg-4">
+
+                    <div class="card course-card h-100">
+
+                        <div class="card-body p-4 d-flex flex-column">
+
+                            <h3 class="card-title fw-bold">
+                                Programming Basics
+                            </h3>
+
+                            <p class="card-text">
+                                Learn the fundamentals of programming with Python.
+                            </p>
+
+                            <a href="#contact" class="btn btn-primary mt-4 align-self-start">
+                                Explore Programming Basics
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Course 2 -->
+                <div class="col-12 col-md-6 col-lg-4">
+
+                    <div class="card course-card h-100">
+
+                        <div class="card-body p-4 d-flex flex-column">
+
+                            <h3 class="card-title fw-bold">
+                                AI Fundamentals
+                            </h3>
+
+                            <p class="card-text">
+                                Understand the basics of Artificial Intelligence and its applications.
+                            </p>
+
+                            <a href="#contact" class="btn btn-primary mt-4 align-self-start">
+                                Explore AI Fundamentals
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Course 3 -->
+                <div class="col-12 col-md-6 col-lg-4">
+
+                    <div class="card course-card h-100">
+
+                        <div class="card-body p-4 d-flex flex-column">
+
+                            <h3 class="card-title fw-bold">
+                                UI Design
+                            </h3>
+
+                            <p class="card-text">
+                                Learn the principles of user interface design and create visually appealing,
+                                user-friendly applications.
+                            </p>
+
+                            <a href="#contact" class="btn btn-primary mt-4 align-self-start">
+                                Explore UI Design
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+    <!-- Footer -->
+    <footer class=" text-white text-center py-4 mt-auto">
+
+        <p class="mb-2">
+            &copy; 2026 LMS Platform. All Rights Reserved.
+        </p>
+
+        <a href="#privacy" class="text-white me-3">
+            Privacy Policy
+        </a>
+
+        <a href="#terms" class="text-white">
+            Terms of Service
+        </a>
+
+    </footer>
+
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scipt.js"></script>
+</body>
+
+</html>

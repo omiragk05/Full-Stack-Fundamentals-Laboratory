@@ -1,3 +1,23 @@
+html,
+body {
+    min-height: 100%;
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    margin-top: auto;
+}
+
 .drawer-end {
     align-items: flex-end;
 }
@@ -6,11 +26,12 @@
     background-color: rgb(215, 223, 224);
 }
 
-.navbar , footer{
+.navbar,
+footer {
     background-color: rgb(36, 70, 111);
 }
 
-.navbar-brand{
+.navbar-brand {
     font-size: xx-large;
     font-family: 'Times New Roman', Times, serif;
     margin-left: 10%;
@@ -121,10 +142,7 @@
     font-weight: 600;
 }
 
-.course-card .btn-primary:hover {
-    background-color: rgb(25, 51, 83);
-    border-color: rgb(25, 51, 83);
-}
+
 
 /* Dark Mode */
 [data-bs-theme="dark"] #courses {
@@ -141,11 +159,9 @@
 }
 
 [data-bs-theme="dark"] .course-image {
-    background: linear-gradient(
-        135deg,
-        #243449,
-        #172333
-    );
+    background: linear-gradient(135deg,
+            #243449,
+            #172333);
 }
 
 [data-bs-theme="dark"] .course-category {
@@ -176,4 +192,3 @@
     color: var(--bs-body-color);
     background-color: var(--bs-tertiary-bg) !important;
 }
-

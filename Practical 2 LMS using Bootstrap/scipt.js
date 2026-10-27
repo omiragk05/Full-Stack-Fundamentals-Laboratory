@@ -36,3 +36,14 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("greeting").textContent = greetingMessage;
 
 });
+
+
+// contact form
+const contactForm = document.querySelector("form");
+
+contactForm.addEventListener("submit", function (event) {
+    event.preventDefault();
+    alert("Message sent successfully!");
+    contactForm.reset();
+
+});
